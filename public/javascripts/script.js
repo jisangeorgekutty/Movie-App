@@ -29,7 +29,7 @@ function getMovies(url) {
 
                 const center = document.createElement('center');
 
-                title.innerHTML = `${element.title}`;
+                title.innerHTML = `${element.title} <br> <a href="/reviews?id=${element.id}&title=${element.title}"> Review </a>`;
                 image.src = IMG_PATH + element.poster_path;
 
                 center.appendChild(image);

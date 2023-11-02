@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #3a2d32;
+    font-family: sans-serif;
+  }
+ h3{
+    font-size: 20px;
+    color: white;
+    font-weight: 600; 
+  }
+
+  h4{
+    font-size: 15px;
+    color: white;
+    font-weight: 400; 
+  }
+
+input {
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+    font-size: 14px;
+    box-shadow: white 4px;
+}
+.main section .add-review-section{
+  height: 30%;
+  width: 100%;
+}
+
+.main section .add-review-section .inp2 input{
+ height: 80px;
+ width: 200px;
+}
+
+.main section .add-review-section button{
+  border-radius: 3px;
+  width: 70px;
+  height: 30px;
+  color: aquamarine;
+  background-color: black;
+  margin-top: .5em;
+  margin-left: 3em;
+ }
+
+.main section .reviews-section{
+   height: 70%;
+   width: 100%;
+   margin-top: 3em;
+}
+
+.main section .reviews-section .card{
+  border-radius: 19px;
+  height: 230px;
+  width:300px ;
+  padding: 15px;
+  text-align: center;
+  background-color: rgb(152, 41, 41);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 30px;
+}
+
+.main section .reviews-section .card .user-name{
+  /* border: 1px solid white; */
+  height: 30px;
+  width: 200px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+
+.main section .reviews-section .card .user-review{
+  /* border: 1px solid white; */
+  height: 150px;
+  width: 270px;
+  display: flex;
+}
+
+.main section .reviews-section .card .user-review p{
+  font-size: 14px;
+  font-weight: 300;
+}
