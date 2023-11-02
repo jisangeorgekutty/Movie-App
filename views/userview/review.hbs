@@ -32,16 +32,18 @@
             </form>
             <div class="reviews-section">
                 <h3>Reviews</h3>
+                {{#if reviewData}}
                 <div class="card">
                     <div class="user-name">
-                        <h4>Name -</h3>
+                        <h4>Name:{{this.reviewData.userName}}</h3>
                     </div>
                     <div class="user-review">
                         <p>
-                            Dummy data hahhah
+                            {{this.reviewData.userReview}}
                         </p>
                     </div>
                 </div>
+                {{/if}}
             </div>
         </section>
     </div>

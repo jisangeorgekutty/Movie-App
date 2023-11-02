@@ -22,7 +22,7 @@ router.post('/add-review',(req,res)=>{
   console.log(userName)
   console.log(userReview)
   userHelper.addReview(movieId,movieTitle,userName,userReview).then((respose)=>{
-
+    res.render('userview/review',{reviewData:respose.data})
   })
 })
 
