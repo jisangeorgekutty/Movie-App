@@ -16,33 +16,33 @@
 <body>
     <div class="main" style="padding-left: 16px;">
         <section id="section">
-            <form method="post" action="/add-review/{{this._id}}" enctype="multipart/form-data">
+            <form method="post" action="/add-review?id={{this.movieId}}&title={{this.movieTitle}}">
                 <div class="add-review-section">
                     <h3>Add New Review</h3>
                     <div class="inp1">
                         <h3>Name:</h3>
-                        <input type="text" placeholder="Name">
+                        <input type="text" name="Name" placeholder="Name">
                     </div>
                     <div class="inp2">
                         <h3>Review:</h3>
-                        <input type="text" placeholder="Type review here...">
+                        <input type="text" name="Review" placeholder="Type review here...">
                     </div>
                     <button type="submit" class="btn">Submit</button>
                 </div>
-                <div class="reviews-section">
-                    <h3>Reviews</h3>
-                    <div class="card">
-                        <div class="user-name">
-                            <h4>Name -</h3>
-                        </div>
-                        <div class="user-review">
-                            <p>
-                                Dummy data hahhah
-                            </p>
-                        </div>
+            </form>
+            <div class="reviews-section">
+                <h3>Reviews</h3>
+                <div class="card">
+                    <div class="user-name">
+                        <h4>Name -</h3>
+                    </div>
+                    <div class="user-review">
+                        <p>
+                            Dummy data hahhah
+                        </p>
                     </div>
                 </div>
-            </form>
+            </div>
         </section>
     </div>
     <script src="/javascripts/review.js"></script>
