@@ -17,8 +17,9 @@
     <div class="main" style="padding-left: 16px;">
         <section id="section">
             <form method="post" action="/add-review?id={{this.movieId}}&title={{this.movieTitle}}">
+            <h2>Add New Review</h2>
                 <div class="add-review-section">
-                    <h3>Add New Review</h3>
+            
                     <div class="inp1">
                         <h3>Name:</h3>
                         <input type="text" name="Name" placeholder="Name">
@@ -30,8 +31,8 @@
                     <button type="submit" class="btn">Submit</button>
                 </div>
             </form>
+            <h2>Reviews of {{this.movieTitle}}</h2>
             <div class="reviews-section">
-                <h3>Reviews of {{this.movieTitle}}</h3>
                 {{#each reviewData}}
                 <div class="card">
                     <div class="user-name">
