@@ -31,19 +31,19 @@
                 </div>
             </form>
             <div class="reviews-section">
-                <h3>Reviews</h3>
-                {{#if reviewData}}
+                <h3>Reviews of {{this.movieTitle}}</h3>
+                {{#each reviewData}}
                 <div class="card">
                     <div class="user-name">
-                        <h4>Name:{{this.reviewData.userName}}</h3>
+                        <h4>Name:{{this.userName}}</h3>
                     </div>
                     <div class="user-review">
                         <p>
-                            {{this.reviewData.userReview}}
+                            {{this.userReview}}
                         </p>
                     </div>
                 </div>
-                {{/if}}
+                {{/each}}
             </div>
         </section>
     </div>
